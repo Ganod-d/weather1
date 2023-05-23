@@ -72,6 +72,8 @@ flutter:
      - assets/img/water.png
      - assets/img/humidity.png
      - assets/img/wind.png
+     - assets/img/google.png
+     - assets/img/weather-app.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

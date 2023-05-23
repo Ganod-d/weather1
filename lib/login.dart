@@ -25,22 +25,46 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromRGBO(65, 174, 255, 1),
       body: Center(
-        child: Container(
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(7), color: Colors.red),
-          child: TextButton(
-              onPressed: signIn,
-              child: const Padding(
+          child: Container(
+          
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(7),
+            color: const Color.fromARGB(255, 255, 253, 253)),
+        child: TextButton(
+          onPressed: signIn,
+          // child: const Padding(
+          //   padding: EdgeInsets.only(left: 10, right: 10),
+          //   child: Image.asset(),
+          //   // child: Text(
+
+          //   //   "Sign In with Google",
+          //   //   style: TextStyle(color: Color.fromARGB(255, 12, 12, 12)),
+
+          //   //  )
+
+          // ),
+          child:Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            
+            children: [
+              Padding(
+                
                 padding: EdgeInsets.only(left: 10, right: 10),
-                child: Text(
-                  "Đăng nhập",
-                  style: TextStyle(color: Colors.white),
+                
+                child: Image.asset('assets/img/google.png'),
+              ),
+              const Text(
+                'Sign In With Google',
+                style: TextStyle(
+                  fontSize: 17,
                 ),
-              )),
+              )
+            ],
+          ),
         ),
-      ),
+      )),
     );
   }
 }

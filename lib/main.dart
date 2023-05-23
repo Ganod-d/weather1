@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:weatherapp/auth_tree.dart';
 import 'package:weatherapp/home_page.dart';
+import 'package:weatherapp/splash_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Color(0xff081b25),
       ),
-      home: const Auth_tree(),
+      home: const SplashView(),
     );
   }
 }

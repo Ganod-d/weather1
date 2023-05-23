@@ -181,7 +181,7 @@ class MyHomPage extends StatelessWidget {
                             children: [
                               Image.asset(
                                 'assets/img/humidity.png',
-                                width: size.width * 0.2,
+                                width: size.width * 0.15,
                               ),
                               Text(
                                 '${data?.wind_dir}',
@@ -190,6 +190,7 @@ class MyHomPage extends StatelessWidget {
                                   fontFamily: 'Hubballi',
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
+                                  
                                 ),
                               ),
                               SizedBox(
@@ -197,10 +198,12 @@ class MyHomPage extends StatelessWidget {
                               ),
                               Text(
                                 'Wind Direction',
+                                textAlign: TextAlign.center,
                                 style: TextStyle(
                                   color: Colors.white.withOpacity(0.6),
                                   fontFamily: 'MavenPro',
                                   fontSize: 17,
+                                
                                   fontWeight: FontWeight.bold,
                                 ),
                               )
